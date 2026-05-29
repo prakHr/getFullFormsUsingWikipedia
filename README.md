@@ -23,3 +23,16 @@ url, query, page_id, google_search_btn_id = "https://www.google.com", "kung fu p
 results = get_insider_page_details(url, query, page_id, google_search_btn_id)
 pprint(results)
 ```
+
+```python
+url = "https://www.google.com"
+query = "kung fu panda" 
+page_id = "(//h3)"
+google_search_btn_id = f'//*[@name="btnK"]'
+page_size = 10
+next_button_id = '//span[normalize-space()="Next"]'
+stop_page = 14
+query_id = '//*[@name="q"]'
+results = automate_google_query(url,query_id, query, page_id, google_search_btn_id, page_size, next_button_id, stop_page)
+pprint(results)
+```
